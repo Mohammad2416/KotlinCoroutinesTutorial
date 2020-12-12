@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KotlinCoroutinesTutorial</string>
+    <string name="click_me" translatable="false">Click Me</string>
+</resources>
