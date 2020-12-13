@@ -1,6 +1,5 @@
 package com.mohammadmirzakhani.interview.kotlincoroutinestutorial
 
-import android.os.Build
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +9,6 @@ import kotlinx.coroutines.Dispatchers.Main
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import okhttp3.ConnectionSpec
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -34,18 +32,6 @@ class MainActivity4 : AppCompatActivity() {
 
         text = findViewById(R.id.textView3)
         var result = ""
-
-        /* ConnectionSpec.MODERN_TLS is the default value */
-        /* ConnectionSpec.MODERN_TLS is the default value */
-        var tlsSpecs: List<*> = listOf(ConnectionSpec.MODERN_TLS)
-
-/* providing backwards-compatibility for API lower than Lollipop: */
-
-/* providing backwards-compatibility for API lower than Lollipop: */
-//        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
-        tlsSpecs = listOf(ConnectionSpec.COMPATIBLE_TLS)
-//        }
-
 
 
         val retofit = Retrofit.Builder()
